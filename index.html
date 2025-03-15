@@ -1,220 +1,348 @@
 <!DOCTYPE html>
 <html lang="en" data-theme="light">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Frontend Developer Portfolio</title>
-    <meta name="description" content="Frontend Developer Portfolio showcasing web development projects and skills">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/animations.css">
-</head>
-<body>
+    <meta
+      name="description"
+      content="Frontend Developer Portfolio showcasing web development projects and skills"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/animations.css" />
+  </head>
+  <body>
     <canvas id="particle-bg" aria-hidden="true"></canvas>
-    <div id="loading-screen" class="loading-screen" role="progressbar" aria-label="Loading portfolio">
-        <div class="logo-container">
-            <svg class="logo-svg" width="100" height="100" viewBox="0 0 100 100" role="img" aria-label="Portfolio logo">
-                <text x="50%" y="50%" text-anchor="middle" dominant-baseline="middle" class="logo-text">JD</text>
-            </svg>
-            <div class="loading-bar"></div>
-        </div>
+    <div
+      id="loading-screen"
+      class="loading-screen"
+      role="progressbar"
+      aria-label="Loading portfolio"
+    >
+      <div class="logo-container">
+        <svg
+          class="logo-svg"
+          width="100"
+          height="100"
+          viewBox="0 0 100 100"
+          role="img"
+          aria-label="Portfolio logo"
+        >
+          <text
+            x="50%"
+            y="50%"
+            text-anchor="middle"
+            dominant-baseline="middle"
+            class="logo-text"
+          >
+            EM
+          </text>
+        </svg>
+        <div class="loading-bar"></div>
+      </div>
     </div>
 
     <a href="#main-content" class="skip-link">Skip to main content</a>
 
     <header role="banner">
-        <nav class="navbar" role="navigation" aria-label="Main navigation">
-            <div class="logo" role="heading" aria-level="1">JD</div>
-            <div class="nav-links">
-                <a href="#home" class="nav-link" tabindex="0">Home</a>
-                <a href="#about" class="nav-link" tabindex="0">About</a>
-                <a href="#projects" class="nav-link" tabindex="0">Projects</a>
-                <a href="#skills" class="nav-link" tabindex="0">Skills</a>
-                <a href="#contact" class="nav-link" tabindex="0">Contact</a>
-            </div>
-            <button id="theme-toggle" aria-label="Toggle dark mode" tabindex="0">
-                <i class="fas fa-moon" aria-hidden="true"></i>
-            </button>
-        </nav>
+      <nav class="navbar" role="navigation" aria-label="Main navigation">
+        <div class="logo" role="heading" aria-level="1">EM</div>
+        <div class="nav-links">
+          <a href="#home" class="nav-link" tabindex="0">Home</a>
+          <a href="#about" class="nav-link" tabindex="0">About</a>
+          <a href="#projects" class="nav-link" tabindex="0">Projects</a>
+          <a href="#skills" class="nav-link" tabindex="0">Skills</a>
+          <a href="#contact" class="nav-link" tabindex="0">Contact</a>
+        </div>
+        <button id="theme-toggle" aria-label="Toggle dark mode" tabindex="0">
+          <i class="fas fa-moon" aria-hidden="true"></i>
+        </button>
+      </nav>
     </header>
 
     <main id="main-content" role="main">
-        <section id="home" class="hero" aria-labelledby="hero-title">
-            <div class="hero-content">
-                <img src="https://images.unsplash.com/photo-1573496799515-eebbb63814f2" alt="Jane Doe - Professional headshot" class="profile-image">
-                <h1 id="hero-title">Jane Doe</h1>
-                <h2>Frontend Developer</h2>
-                <div class="social-links" role="list">
-                    <a href="https://github.com" target="_blank" rel="noopener" class="social-link" tabindex="0" aria-label="Visit my GitHub profile">
-                        <i class="fab fa-github" aria-hidden="true"></i>
-                    </a>
-                    <a href="https://linkedin.com" target="_blank" rel="noopener" class="social-link" tabindex="0" aria-label="Visit my LinkedIn profile">
-                        <i class="fab fa-linkedin" aria-hidden="true"></i>
-                    </a>
-                    <a href="https://twitter.com" target="_blank" rel="noopener" class="social-link" tabindex="0" aria-label="Visit my Twitter profile">
-                        <i class="fab fa-twitter" aria-hidden="true"></i>
-                    </a>
-                </div>
+      <section id="home" class="hero" aria-labelledby="hero-title">
+        <div class="hero-content">
+          <img
+            src="./img/Avatar.jpg"
+            alt="Erick Meikoki - Professional headshot"
+            class="profile-image"
+          />
+          <h1 id="hero-title">Erick Meikoki</h1>
+          <h2>FullStack Developer</h2>
+          <div class="social-links" role="list">
+            <a
+              href="https://github.com/boredinthecrib"
+              target="_blank"
+              rel="noopener"
+              class="social-link"
+              tabindex="0"
+              aria-label="Visit my GitHub profile"
+            >
+              <i class="fab fa-github" aria-hidden="true"></i>
+            </a>
+            <a
+              href="https://www.linkedin.com/in/erick-meikoki-ba4426158/"
+              target="_blank"
+              rel="noopener"
+              class="social-link"
+              tabindex="0"
+              aria-label="Visit my LinkedIn profile"
+            >
+              <i class="fab fa-linkedin" aria-hidden="true"></i>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="about" aria-labelledby="about-title">
+        <h2 id="about-title">About Me</h2>
+        <p>
+          Full-stack web developer with a passion for creating seamless,
+          end-to-end web applications. Experienced in both frontend technologies
+          (JavaScript, React, CSS3) and backend development (Python, Node.js,
+          SQL databases). I specialize in building scalable web solutions with
+          clean, maintainable code and excellent user experience.
+        </p>
+        <p>
+          With strong problem-solving skills and attention to detail, I've
+          successfully delivered numerous web applications from concept to
+          deployment. My approach combines creative frontend design with robust
+          backend architecture to create efficient, user-friendly applications.
+        </p>
+      </section>
+
+      <section id="projects" class="projects" aria-labelledby="projects-title">
+        <h2 id="projects-title">Projects</h2>
+        <div class="project-grid" role="list">
+          <article class="project-card" role="listitem" tabindex="0">
+            <img src="/img/cats.jpeg" alt="Cats Cradle App" />
+            <div class="project-info">
+              <h3>Cats Cradle</h3>
+              <p>A market place app where students can list/sell items.</p>
+              <div class="project-links">
+                <a
+                  href="https://catscradle-firebasetry5.web.app/"
+                  class="btn"
+                  tabindex="0"
+                  aria-label="View Dashboard UI demo"
+                  >Demo</a
+                >
+                <a
+                  href="#"
+                  class="btn"
+                  tabindex="0"
+                  aria-label="View Dashboard UI code"
+                  >Code</a
+                >
+              </div>
             </div>
-        </section>
-
-        <section id="about" class="about" aria-labelledby="about-title">
-            <h2 id="about-title">About Me</h2>
-            <p>Full-stack web developer with a passion for creating seamless, end-to-end web applications. Experienced in both frontend technologies (JavaScript, React, CSS3) and backend development (Python, Node.js, SQL databases). I specialize in building scalable web solutions with clean, maintainable code and excellent user experience.</p>
-            <p>With strong problem-solving skills and attention to detail, I've successfully delivered numerous web applications from concept to deployment. My approach combines creative frontend design with robust backend architecture to create efficient, user-friendly applications.</p>
-        </section>
-
-        <section id="projects" class="projects" aria-labelledby="projects-title">
-            <h2 id="projects-title">Projects</h2>
-            <div class="project-grid" role="list">
-                <article class="project-card" role="listitem" tabindex="0">
-                    <img src="https://images.unsplash.com/photo-1508873535684-277a3cbcc4e8" alt="Screenshot of E-commerce Platform project">
-                    <div class="project-info">
-                        <h3>E-commerce Platform</h3>
-                        <p>Modern e-commerce solution with cart functionality and payment integration.</p>
-                        <div class="project-links">
-                            <a href="#" class="btn" tabindex="0" aria-label="View E-commerce Platform demo">Demo</a>
-                            <a href="#" class="btn" tabindex="0" aria-label="View E-commerce Platform code">Code</a>
-                        </div>
-                    </div>
-                </article>
-                <article class="project-card" role="listitem" tabindex="0">
-                    <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40" alt="Screenshot of Dashboard UI project">
-                    <div class="project-info">
-                        <h3>Dashboard UI</h3>
-                        <p>Analytics dashboard with real-time data visualization.</p>
-                        <div class="project-links">
-                            <a href="#" class="btn" tabindex="0" aria-label="View Dashboard UI demo">Demo</a>
-                            <a href="#" class="btn" tabindex="0" aria-label="View Dashboard UI code">Code</a>
-                        </div>
-                    </div>
-                </article>
-                <article class="project-card" role="listitem" tabindex="0">
-                    <img src="https://images.unsplash.com/photo-1739514984003-330f7c1d2007" alt="Screenshot of Social Media App project">
-                    <div class="project-info">
-                        <h3>Social Media App</h3>
-                        <p>Feature-rich social platform with real-time messaging.</p>
-                        <div class="project-links">
-                            <a href="#" class="btn" tabindex="0" aria-label="View Social Media App demo">Demo</a>
-                            <a href="#" class="btn" tabindex="0" aria-label="View Social Media App code">Code</a>
-                        </div>
-                    </div>
-                </article>
-                <article class="project-card" role="listitem" tabindex="0">
-                    <img src="https://images.unsplash.com/photo-1510759395231-72b17d622279" alt="Screenshot of Task Manager project">
-                    <div class="project-info">
-                        <h3>Task Manager</h3>
-                        <p>Productivity app with drag-and-drop interface.</p>
-                        <div class="project-links">
-                            <a href="#" class="btn" tabindex="0" aria-label="View Task Manager demo">Demo</a>
-                            <a href="#" class="btn" tabindex="0" aria-label="View Task Manager code">Code</a>
-                        </div>
-                    </div>
-                </article>
+          </article>
+          <article class="project-card" role="listitem" tabindex="0">
+            <img
+              src="./img/Keep.png"
+              alt="Screenshot of Social Media App project"
+            />
+            <div class="project-info">
+              <h3>Google Keep Clone</h3>
+              <p>A note taking app with the Google Keep UI</p>
+              <div class="project-links">
+                <a
+                  href="https://csb-quduk-rnxwifswa.vercel.app/"
+                  class="btn"
+                  tabindex="0"
+                  aria-label="View Google Keep app"
+                  >Demo</a
+                >
+              </div>
             </div>
-        </section>
-
-        <section id="skills" class="skills" aria-labelledby="skills-title">
-            <h2 id="skills-title">Skills</h2>
-            <div class="skills-grid" role="list">
-                <div class="skill-category" role="listitem" tabindex="0">
-                    <h3>Frontend</h3>
-                    <ul role="list">
-                        <li>HTML5</li>
-                        <li>CSS3</li>
-                        <li>JavaScript</li>
-                        <li>React</li>
-                        <li>Vue.js</li>
-                    </ul>
-                </div>
-                <div class="skill-category" role="listitem" tabindex="0">
-                    <h3>Backend</h3>
-                    <ul role="list">
-                        <li>Python</li>
-                        <li>Flask</li>
-                        <li>Node.js</li>
-                        <li>RESTful APIs</li>
-                        <li>SQL Databases</li>
-                        <li>MongoDB</li>
-                    </ul>
-                </div>
-                <div class="skill-category" role="listitem" tabindex="0">
-                    <h3>Tools</h3>
-                    <ul role="list">
-                        <li>Git</li>
-                        <li>Webpack</li>
-                        <li>VS Code</li>
-                        <li>Docker</li>
-                        <li>AWS</li>
-                    </ul>
-                </div>
-
+          </article>
+          <article class="project-card" role="listitem" tabindex="0">
+            <img src="./img/netflix.jpg" alt="Screenshot of Netflix" />
+            <div class="project-info">
+              <h3>Netflix Homepage</h3>
+              <p>A React clone of Netflix</p>
+              <div class="project-links">
+                <a
+                  href="https://netflix-clone-5b7d6.web.app/"
+                  class="btn"
+                  tabindex="0"
+                  aria-label="View Task Manager demo"
+                  >Demo</a
+                >
+              </div>
             </div>
-        </section>
+          </article>
 
-        <section id="contact" class="contact" aria-labelledby="contact-title">
-            <h2 id="contact-title">Contact Me</h2>
-            <form id="contact-form" class="contact-form" role="form" aria-label="Contact form">
-                <div class="form-group">
-                    <label for="name">Name</label>
-                    <input type="text" id="name" name="name" required aria-required="true">
-                </div>
-                <div class="form-group">
-                    <label for="email">Email</label>
-                    <input type="email" id="email" name="email" required aria-required="true">
-                </div>
-                <div class="form-group">
-                    <label for="message">Message</label>
-                    <textarea id="message" name="message" required aria-required="true"></textarea>
-                </div>
-                <button type="submit" class="btn submit-btn" tabindex="0">Send Message</button>
-            </form>
-        </section>
-        <section id="feedback" class="feedback" aria-labelledby="feedback-title">
-            <h2 id="feedback-title">Your Feedback</h2>
-            <div class="feedback-widget" role="complementary">
-                <button id="feedback-toggle" class="feedback-toggle btn" aria-expanded="false" aria-controls="feedback-form">
-                    <i class="fas fa-comment" aria-hidden="true"></i> Share Your Feedback
-                </button>
-                <form id="feedback-form" class="feedback-form" role="form" aria-label="Feedback form" hidden>
-                    <div class="form-group">
-                        <label for="feedback-type">Type of Feedback</label>
-                        <select id="feedback-type" name="feedback-type" required aria-required="true">
-                            <option value="">Select feedback type</option>
-                            <option value="suggestion">Suggestion</option>
-                            <option value="bug">Bug Report</option>
-                            <option value="compliment">Compliment</option>
-                            <option value="other">Other</option>
-                        </select>
-                    </div>
-                    <div class="form-group">
-                        <label for="feedback-message">Your Message</label>
-                        <textarea id="feedback-message" name="feedback-message" required aria-required="true" 
-                            placeholder="Share your thoughts..."></textarea>
-                    </div>
-                    <div class="form-group">
-                        <label for="feedback-rating">Rating</label>
-                        <div class="rating-container" role="group" aria-label="Rate from 1 to 5 stars">
-                            <input type="radio" id="star5" name="rating" value="5" />
-                            <label for="star5" aria-label="5 stars">★</label>
-                            <input type="radio" id="star4" name="rating" value="4" />
-                            <label for="star4" aria-label="4 stars">★</label>
-                            <input type="radio" id="star3" name="rating" value="3" />
-                            <label for="star3" aria-label="3 stars">★</label>
-                            <input type="radio" id="star2" name="rating" value="2" />
-                            <label for="star2" aria-label="2 stars">★</label>
-                            <input type="radio" id="star1" name="rating" value="1" />
-                            <label for="star1" aria-label="1 star">★</label>
-                        </div>
-                    </div>
-                    <button type="submit" class="btn submit-btn" tabindex="0">Submit Feedback</button>
-                </form>
+          <article class="project-card" role="listitem" tabindex="0">
+            <img src="./img/calc.png" alt="Screenshot of a dynamic calc" />
+            <div class="project-info">
+              <h3>Dynamic Calculator</h3>
+              <p>A calculator that maintains the logs</p>
+              <div class="project-links">
+                <a
+                  href="https://dynamiccalc1.netlify.app/"
+                  class="btn"
+                  tabindex="0"
+                  aria-label="View Calc"
+                  >Demo</a
+                >
+              </div>
             </div>
-        </section>
+          </article>
+        </div>
+      </section>
+
+      <section id="skills" class="skills" aria-labelledby="skills-title">
+        <h2 id="skills-title">Skills</h2>
+        <div class="skills-grid" role="list">
+          <div class="skill-category" role="listitem" tabindex="0">
+            <h3>Frontend</h3>
+            <ul role="list">
+              <li>HTML5,CSS3</li>
+              <li>JavaScript</li>
+              <li>React, Angular Js, Next Js</li>
+            </ul>
+          </div>
+          <div class="skill-category" role="listitem" tabindex="0">
+            <h3>Backend</h3>
+            <ul role="list">
+              <li>Python (Flask), Node Js, Ruby on Rails</li>
+              <li>RESTful APIs</li>
+              <li>JWT, OAuth</li>
+              <li>Databases: MongoDB, Postgress, Firebase</li>
+            </ul>
+          </div>
+          <div class="skill-category" role="listitem" tabindex="0">
+            <h3>Tools</h3>
+            <ul role="list">
+              <li>Git</li>
+              <li>Webpack</li>
+              <li>Docker</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="contact" aria-labelledby="contact-title">
+        <h2 id="contact-title">Contact Me</h2>
+        <form
+          id="contact-form"
+          class="contact-form"
+          role="form"
+          aria-label="Contact form"
+        >
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              required
+              aria-required="true"
+            />
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              required
+              aria-required="true"
+            />
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea
+              id="message"
+              name="message"
+              required
+              aria-required="true"
+            ></textarea>
+          </div>
+          <button type="submit" class="btn submit-btn" tabindex="0">
+            Send Message
+          </button>
+        </form>
+      </section>
+      <section id="feedback" class="feedback" aria-labelledby="feedback-title">
+        <h2 id="feedback-title">Your Feedback</h2>
+        <div class="feedback-widget" role="complementary">
+          <button
+            id="feedback-toggle"
+            class="feedback-toggle btn"
+            aria-expanded="false"
+            aria-controls="feedback-form"
+          >
+            <i class="fas fa-comment" aria-hidden="true"></i> Share Your
+            Feedback
+          </button>
+          <form
+            id="feedback-form"
+            class="feedback-form"
+            role="form"
+            aria-label="Feedback form"
+            hidden
+          >
+            <div class="form-group">
+              <label for="feedback-type">Type of Feedback</label>
+              <select
+                id="feedback-type"
+                name="feedback-type"
+                required
+                aria-required="true"
+              >
+                <option value="">Select feedback type</option>
+                <option value="suggestion">Suggestion</option>
+                <option value="bug">Bug Report</option>
+                <option value="compliment">Compliment</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="feedback-message">Your Message</label>
+              <textarea
+                id="feedback-message"
+                name="feedback-message"
+                required
+                aria-required="true"
+                placeholder="Share your thoughts..."
+              ></textarea>
+            </div>
+            <div class="form-group">
+              <label for="feedback-rating">Rating</label>
+              <div
+                class="rating-container"
+                role="group"
+                aria-label="Rate from 1 to 5 stars"
+              >
+                <input type="radio" id="star5" name="rating" value="5" />
+                <label for="star5" aria-label="5 stars">★</label>
+                <input type="radio" id="star4" name="rating" value="4" />
+                <label for="star4" aria-label="4 stars">★</label>
+                <input type="radio" id="star3" name="rating" value="3" />
+                <label for="star3" aria-label="3 stars">★</label>
+                <input type="radio" id="star2" name="rating" value="2" />
+                <label for="star2" aria-label="2 stars">★</label>
+                <input type="radio" id="star1" name="rating" value="1" />
+                <label for="star1" aria-label="1 star">★</label>
+              </div>
+            </div>
+            <button type="submit" class="btn submit-btn" tabindex="0">
+              Submit Feedback
+            </button>
+          </form>
+        </div>
+      </section>
     </main>
 
     <footer role="contentinfo">
-        <p>&copy; 2024 Jane Doe. All rights reserved.</p>
+      <p>&copy; 2024 Erick Meikoki. All rights reserved.</p>
     </footer>
 
     <script src="js/loading.js" type="module"></script>
@@ -226,5 +354,5 @@
     <script src="js/accessibility.js" type="module"></script>
     <script src="js/tooltips.js" type="module"></script>
     <script src="js/feedback.js" type="module"></script>
-</body>
+  </body>
 </html>
