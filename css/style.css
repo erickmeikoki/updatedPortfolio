@@ -16,6 +16,21 @@
     --high-contrast-border: #000000;
 }
 
+.skip-link {
+    position: absolute;
+    top: -40px;
+    left: 0;
+    background: var(--primary-color);
+    color: white;
+    padding: 8px;
+    z-index: 100;
+    transition: top 0.3s;
+}
+
+.skip-link:focus {
+    top: 0;
+}
+
 [data-theme="dark"] {
     --primary-color: #60a5fa;
     --text-color: #f3f4f6;
@@ -516,6 +531,32 @@ footer {
 [data-high-contrast="true"] *:focus {
     outline: 3px solid var(--high-contrast-primary);
     outline-offset: 2px;
+}
+
+.nav-link:focus,
+.btn:focus,
+.project-card:focus,
+.skill-category:focus {
+    outline: 3px solid var(--primary-color);
+    outline-offset: 2px;
+    text-decoration: underline;
+}
+
+input:focus,
+textarea:focus {
+    outline: 3px solid var(--primary-color);
+    outline-offset: 0;
+    box-shadow: 0 0 0 2px var(--bg-color), 0 0 0 4px var(--primary-color);
+}
+
+[data-high-contrast="true"] .nav-link:focus,
+[data-high-contrast="true"] .btn:focus,
+[data-high-contrast="true"] .project-card:focus,
+[data-high-contrast="true"] .skill-category:focus,
+[data-high-contrast="true"] input:focus,
+[data-high-contrast="true"] textarea:focus {
+    outline: 3px solid var(--high-contrast-primary);
+    box-shadow: none;
 }
 
 [data-high-contrast="true"] .btn,
