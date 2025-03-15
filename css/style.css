@@ -5,7 +5,7 @@
     --bg-color: #ffffff;
     --card-bg: #f3f4f6;
     --border-color: #e5e7eb;
-    
+
     /* Animation durations */
     --transition-speed: 0.3s;
 }
@@ -22,10 +22,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-
-html {
-    scroll-behavior: smooth;
 }
 
 body {
@@ -237,7 +233,6 @@ section {
 .btn:active {
     transform: translateY(0);
 }
-
 
 .skills-grid {
     display: grid;

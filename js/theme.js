@@ -18,6 +18,11 @@ class ThemeManager {
                 this.toggleBtn.style.transform = 'rotate(0) scale(1)';
             }, 200);
         });
+
+        // Check system preference on load
+        if (!localStorage.getItem('theme')) {
+            this.checkSystemPreference();
+        }
     }
 
     toggleTheme() {
@@ -35,6 +40,14 @@ class ThemeManager {
         } else {
             icon.classList.remove('fa-sun');
             icon.classList.add('fa-moon');
+        }
+    }
+
+    checkSystemPreference() {
+        if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+            this.theme = 'dark';
+            this.updateToggleButton();
+            document.documentElement.setAttribute('data-theme', 'dark');
         }
     }
 }
