@@ -117,6 +117,47 @@
                 <button type="submit" class="btn submit-btn" tabindex="0">Send Message</button>
             </form>
         </section>
+        <section id="feedback" class="feedback" aria-labelledby="feedback-title">
+            <h2 id="feedback-title">Your Feedback</h2>
+            <div class="feedback-widget" role="complementary">
+                <button id="feedback-toggle" class="feedback-toggle btn" aria-expanded="false" aria-controls="feedback-form">
+                    <i class="fas fa-comment" aria-hidden="true"></i> Share Your Feedback
+                </button>
+                <form id="feedback-form" class="feedback-form" role="form" aria-label="Feedback form" hidden>
+                    <div class="form-group">
+                        <label for="feedback-type">Type of Feedback</label>
+                        <select id="feedback-type" name="feedback-type" required aria-required="true">
+                            <option value="">Select feedback type</option>
+                            <option value="suggestion">Suggestion</option>
+                            <option value="bug">Bug Report</option>
+                            <option value="compliment">Compliment</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="feedback-message">Your Message</label>
+                        <textarea id="feedback-message" name="feedback-message" required aria-required="true" 
+                            placeholder="Share your thoughts..."></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="feedback-rating">Rating</label>
+                        <div class="rating-container" role="group" aria-label="Rate from 1 to 5 stars">
+                            <input type="radio" id="star5" name="rating" value="5" />
+                            <label for="star5" aria-label="5 stars">★</label>
+                            <input type="radio" id="star4" name="rating" value="4" />
+                            <label for="star4" aria-label="4 stars">★</label>
+                            <input type="radio" id="star3" name="rating" value="3" />
+                            <label for="star3" aria-label="3 stars">★</label>
+                            <input type="radio" id="star2" name="rating" value="2" />
+                            <label for="star2" aria-label="2 stars">★</label>
+                            <input type="radio" id="star1" name="rating" value="1" />
+                            <label for="star1" aria-label="1 star">★</label>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn submit-btn" tabindex="0">Submit Feedback</button>
+                </form>
+            </div>
+        </section>
     </main>
 
     <footer role="contentinfo">
@@ -131,5 +172,6 @@
     <script src="js/theme-generator.js" type="module"></script>
     <script src="js/accessibility.js" type="module"></script>
     <script src="js/tooltips.js" type="module"></script>
+    <script src="js/feedback.js" type="module"></script>
 </body>
 </html>

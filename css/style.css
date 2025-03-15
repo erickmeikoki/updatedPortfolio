@@ -619,3 +619,82 @@ textarea:focus {
 [data-high-contrast="true"] .tooltip::after {
     border-bottom-color: var(--high-contrast-border);
 }
+
+/* Feedback widget styles */
+.feedback {
+    padding: 2rem 1rem;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.feedback-widget {
+    margin-top: 1rem;
+}
+
+.feedback-toggle {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.feedback-form {
+    background-color: var(--card-bg);
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    border: 1px solid var(--border-color);
+    margin-top: 1rem;
+}
+
+.feedback-form select {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid var(--border-color);
+    border-radius: 0.25rem;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
+
+.rating-container {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    gap: 0.25rem;
+}
+
+.rating-container input {
+    display: none;
+}
+
+.rating-container label {
+    font-size: 2rem;
+    color: var(--border-color);
+    cursor: pointer;
+    transition: color var(--transition-speed);
+}
+
+.rating-container label:hover,
+.rating-container label:hover ~ label,
+.rating-container input:checked ~ label {
+    color: var(--primary-color);
+}
+
+[data-high-contrast="true"] .rating-container label {
+    color: var(--high-contrast-border);
+}
+
+[data-high-contrast="true"] .rating-container label:hover,
+[data-high-contrast="true"] .rating-container label:hover ~ label,
+[data-high-contrast="true"] .rating-container input:checked ~ label {
+    color: var(--high-contrast-primary);
+}
+
+@media (max-width: 768px) {
+    .feedback-form {
+        padding: 1rem;
+    }
+
+    .rating-container label {
+        font-size: 1.5rem;
+    }
+}
