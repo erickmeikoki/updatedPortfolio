@@ -10,8 +10,14 @@ class ThemeManager {
         document.documentElement.setAttribute('data-theme', this.theme);
         this.updateToggleButton();
 
-        // Add event listener
-        this.toggleBtn.addEventListener('click', () => this.toggleTheme());
+        // Add event listener with enhanced animation
+        this.toggleBtn.addEventListener('click', () => {
+            this.toggleBtn.style.transform = 'rotate(180deg) scale(0.8)';
+            setTimeout(() => {
+                this.toggleTheme();
+                this.toggleBtn.style.transform = 'rotate(0) scale(1)';
+            }, 200);
+        });
     }
 
     toggleTheme() {
