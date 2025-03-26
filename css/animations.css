@@ -1,209 +1,291 @@
 @keyframes fadeIn {
-    from {
-        opacity: 0;
-        transform: translateY(20px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
-@keyframes slideIn {
-    from {
-        transform: translateX(-100%);
-    }
-    to {
-        transform: translateX(0);
-    }
+@keyframes slideUp {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes scale {
+  from {
+    transform: scale(0.95);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(-180deg);
+  }
+  to {
+    transform: rotate(0);
+  }
 }
 
 .reveal {
-    opacity: 0;
-    transform: translateY(20px);
-    transition: all 0.6s ease-in-out;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.8s ease;
 }
 
 .reveal.active {
-    opacity: 1;
-    transform: translateY(0);
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .reveal-left {
-    opacity: 0;
-    transform: translateX(-50px);
-    transition: all 0.6s ease-in-out;
+  opacity: 0;
+  transform: translateX(-50px);
+  transition: all 0.6s ease-in-out;
 }
 
 .reveal-left.active {
-    opacity: 1;
-    transform: translateX(0);
+  opacity: 1;
+  transform: translateX(0);
 }
 
 .reveal-right {
-    opacity: 0;
-    transform: translateX(50px);
-    transition: all 0.6s ease-in-out;
+  opacity: 0;
+  transform: translateX(50px);
+  transition: all 0.6s ease-in-out;
 }
 
 .reveal-right.active {
-    opacity: 1;
-    transform: translateX(0);
+  opacity: 1;
+  transform: translateX(0);
 }
 
 .reveal-fade {
-    opacity: 0;
-    transition: opacity 0.6s ease-in-out;
+  opacity: 0;
+  transition: opacity 0.6s ease-in-out;
 }
 
 .reveal-fade.active {
-    opacity: 1;
+  opacity: 1;
 }
 
 /* Original animations remain for other elements */
 .hero-content {
-    animation: fadeIn 1s ease-out;
+  animation: fadeIn 1s ease-out;
 }
 
 .project-card {
-    animation: fadeIn 0.5s ease-out;
+  animation: scale 0.5s ease-out;
+  animation-fill-mode: both;
+}
+
+.project-card:nth-child(1) {
+  animation-delay: 0.1s;
+}
+.project-card:nth-child(2) {
+  animation-delay: 0.2s;
+}
+.project-card:nth-child(3) {
+  animation-delay: 0.3s;
+}
+.project-card:nth-child(4) {
+  animation-delay: 0.4s;
+}
+.project-card:nth-child(5) {
+  animation-delay: 0.5s;
+}
+.project-card:nth-child(6) {
+  animation-delay: 0.6s;
 }
 
 .skill-category {
-    animation: slideIn 0.5s ease-out;
+  animation: slideUp 0.5s ease-out;
+  animation-fill-mode: both;
+}
+
+.skill-category:nth-child(1) {
+  animation-delay: 0.1s;
+}
+.skill-category:nth-child(2) {
+  animation-delay: 0.2s;
+}
+.skill-category:nth-child(3) {
+  animation-delay: 0.3s;
 }
 
 /* Hover animations */
 .nav-link {
-    position: relative;
+  position: relative;
 }
 
 .nav-link::after {
-    content: '';
-    position: absolute;
-    bottom: -2px;
-    left: 0;
-    width: 0;
-    height: 2px;
-    background-color: var(--primary-color);
-    transition: width var(--transition-speed);
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: var(--primary-color);
+  transition: width var(--transition-speed);
 }
 
 .nav-link:hover::after {
-    width: 100%;
+  width: 100%;
 }
 
 .project-card {
-    transition: transform var(--transition-speed), box-shadow var(--transition-speed);
+  transition: transform var(--transition-speed),
+    box-shadow var(--transition-speed);
 }
 
 .project-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
 }
 
 .btn {
-    transition: transform var(--transition-speed), background-color var(--transition-speed);
+  position: relative;
+  overflow: hidden;
 }
 
-.btn:hover {
-    transform: translateY(-2px);
+.btn::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  transition: width 0.6s ease, height 0.6s ease;
+}
+
+.btn:hover::after {
+  width: 300%;
+  height: 300%;
 }
 
 .social-links a {
-    transition: transform var(--transition-speed);
+  transition: transform var(--transition-speed);
 }
 
 .social-links a:hover {
-    transform: scale(1.2);
+  transform: translateY(-3px) rotate(8deg);
 }
 
 input:focus,
 textarea:focus {
-    outline: none;
-    box-shadow: 0 0 0 2px var(--primary-color);
-    transition: box-shadow var(--transition-speed);
+  outline: none;
+  box-shadow: 0 0 0 2px var(--primary-color);
+  transition: box-shadow var(--transition-speed);
 }
 
 /* Loading screen animations */
 @keyframes logoFadeIn {
-    from {
-        opacity: 0;
-        transform: scale(0.8);
-    }
-    to {
-        opacity: 1;
-        transform: scale(1);
-    }
+  from {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
 }
 
 @keyframes loadingBarProgress {
-    from {
-        width: 0;
-    }
-    to {
-        width: 100%;
-    }
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
 }
 
 @keyframes loadingScreenFadeOut {
-    from {
-        opacity: 1;
-        visibility: visible;
-    }
-    to {
-        opacity: 0;
-        visibility: hidden;
-    }
+  from {
+    opacity: 1;
+    visibility: visible;
+  }
+  to {
+    opacity: 0;
+    visibility: hidden;
+  }
 }
 
 .loading-screen {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: var(--bg-color);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 9999;
-    transition: opacity 0.5s ease-out, visibility 0.5s ease-out;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--bg-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  transition: opacity 0.5s ease-out, visibility 0.5s ease-out;
 }
 
 .loading-screen.hidden {
-    animation: loadingScreenFadeOut 0.5s ease-out forwards;
+  animation: loadingScreenFadeOut 0.5s ease-out forwards;
 }
 
 .logo-container {
-    text-align: center;
+  text-align: center;
 }
 
 .logo-svg {
-    animation: logoFadeIn 0.8s ease-out;
+  animation: pulse 2s infinite;
 }
 
 .logo-text {
-    font-size: 48px;
-    font-weight: bold;
-    fill: var(--primary-color);
-    font-family: system-ui, -apple-system, sans-serif;
+  font-size: 48px;
+  font-weight: bold;
+  fill: var(--primary-color);
+  font-family: system-ui, -apple-system, sans-serif;
 }
 
 .loading-bar {
-    width: 200px;
-    height: 4px;
-    background-color: var(--card-bg);
-    margin: 20px auto 0;
-    border-radius: 2px;
-    overflow: hidden;
+  width: 200px;
+  height: 4px;
+  background-color: var(--card-bg);
+  margin: 20px auto 0;
+  border-radius: 2px;
+  overflow: hidden;
 }
 
 .loading-bar::after {
-    content: '';
-    display: block;
-    width: 0;
-    height: 100%;
-    background-color: var(--primary-color);
-    animation: loadingBarProgress 2s ease-out forwards;
+  content: "";
+  display: block;
+  width: 0;
+  height: 100%;
+  background-color: var(--primary-color);
+  animation: loadingBarProgress 2s ease-out forwards;
+}
+
+/* Theme toggle animation */
+#theme-toggle i {
+  transition: transform 0.3s ease;
+}
+
+#theme-toggle:hover i {
+  transform: rotate(180deg);
+}
+
+/* Form input focus animation */
+.form-group input:focus,
+.form-group textarea:focus {
+  transform: translateY(-2px);
 }

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Thank You - Erick Meikoki</title>
+    <meta name="description" content="Thank you for contacting Erick Meikoki" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/animations.css" />
+  </head>
+  <body>
+    <canvas id="particle-bg" aria-hidden="true"></canvas>
+
+    <header role="banner">
+      <nav class="navbar" role="navigation" aria-label="Main navigation">
+        <div class="logo" role="heading" aria-level="1">EM</div>
+        <div class="nav-links">
+          <a href="index.html#home" class="nav-link" tabindex="0">Home</a>
+          <a href="index.html#about" class="nav-link" tabindex="0">About</a>
+          <a href="index.html#projects" class="nav-link" tabindex="0"
+            >Projects</a
+          >
+          <a href="index.html#skills" class="nav-link" tabindex="0">Skills</a>
+          <a href="index.html#contact" class="nav-link" tabindex="0">Contact</a>
+        </div>
+        <button id="theme-toggle" aria-label="Toggle dark mode" tabindex="0">
+          <i class="fas fa-moon" aria-hidden="true"></i>
+        </button>
+      </nav>
+    </header>
+
+    <main id="main-content" role="main">
+      <section class="thank-you-section">
+        <div class="thank-you-content">
+          <i class="fas fa-check-circle success-icon"></i>
+          <h1>Thank You!</h1>
+          <p>
+            Your message has been sent successfully. I'll get back to you as
+            soon as possible.
+          </p>
+          <a href="index.html" class="btn primary-btn">Return to Homepage</a>
+        </div>
+      </section>
+    </main>
+
+    <footer role="contentinfo">
+      <p>&copy; 2024 Erick Meikoki. All rights reserved.</p>
+    </footer>
+
+    <script src="js/particles.js" type="module"></script>
+    <script src="js/theme.js" type="module"></script>
+  </body>
+</html>

@@ -8,6 +8,37 @@
       name="description"
       content="Full Stack Developer's Portfolio showcasing web development projects and skills"
     />
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://erickmeikoki.com/" />
+    <meta property="og:title" content="Erick Meikoki - Full Stack Developer" />
+    <meta
+      property="og:description"
+      content="Full Stack Developer's Portfolio showcasing web development projects and skills"
+    />
+    <meta property="og:image" content="./img/Avatar.jpg" />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://erickmeikoki.com/" />
+    <meta
+      property="twitter:title"
+      content="Erick Meikoki - Full Stack Developer"
+    />
+    <meta
+      property="twitter:description"
+      content="Full Stack Developer's Portfolio showcasing web development projects and skills"
+    />
+    <meta property="twitter:image" content="./img/Avatar.jpg" />
+
+    <!-- Additional SEO meta tags -->
+    <meta
+      name="keywords"
+      content="Full Stack Developer, Web Development, React, Node.js, Python, JavaScript"
+    />
+    <meta name="author" content="Erick Meikoki" />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://erickmeikoki.com/" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
@@ -65,15 +96,41 @@
     </header>
 
     <main id="main-content" role="main">
-      <section id="home" class="hero" aria-labelledby="hero-title">
+      <section
+        id="home"
+        class="hero hero-section reveal"
+        aria-labelledby="hero-title"
+      >
         <div class="hero-content">
           <img
             src="./img/Avatar.jpg"
             alt="Erick Meikoki - Professional headshot"
             class="profile-image"
+            loading="lazy"
           />
           <h1 id="hero-title">Erick Meikoki</h1>
           <h2>FullStack Developer</h2>
+          <p class="hero-summary">
+            Crafting elegant solutions to complex problems through clean,
+            efficient code and intuitive user experiences.
+          </p>
+          <div class="hero-cta">
+            <a
+              href="#contact"
+              class="btn primary-btn"
+              tabindex="0"
+              aria-label="Get in touch"
+              >Get in Touch</a
+            >
+            <a
+              href="./resume.pdf"
+              class="btn secondary-btn"
+              tabindex="0"
+              aria-label="Download resume"
+              target="_blank"
+              >Download Resume</a
+            >
+          </div>
           <div class="social-links" role="list">
             <a
               href="https://github.com/erickmeikoki"
@@ -99,7 +156,11 @@
         </div>
       </section>
 
-      <section id="about" class="about" aria-labelledby="about-title">
+      <section
+        id="about"
+        class="about about-section reveal"
+        aria-labelledby="about-title"
+      >
         <h2 id="about-title">About Me</h2>
         <p>
           Full-stack web developer with a passion for creating seamless,
@@ -116,11 +177,15 @@
         </p>
       </section>
 
-      <section id="projects" class="projects" aria-labelledby="projects-title">
+      <section
+        id="projects"
+        class="projects projects-section reveal"
+        aria-labelledby="projects-title"
+      >
         <h2 id="projects-title">Projects</h2>
         <div class="project-grid" role="list">
           <article class="project-card" role="listitem" tabindex="0">
-            <img src="./img/cats.jpeg" alt="Cats Cradle App" />
+            <img src="./img/cats.jpeg" alt="Cats Cradle App" loading="lazy" />
             <div class="project-info">
               <h3>Cats Cradle</h3>
               <p>A market place app where students can list/sell items.</p>
@@ -138,7 +203,11 @@
             </div>
           </article>
           <article class="project-card" role="listitem" tabindex="0">
-            <img src="./img/Keep.png" alt="Screenshot of Google Keep App" />
+            <img
+              src="./img/Keep.png"
+              alt="Screenshot of Google Keep App"
+              loading="lazy"
+            />
             <div class="project-info">
               <h3>Google Keep Clone</h3>
               <p>A note taking app with the Google Keep UI</p>
@@ -156,7 +225,11 @@
             </div>
           </article>
           <article class="project-card" role="listitem" tabindex="0">
-            <img src="./img/netflix.jpg" alt="Screenshot of Netflix" />
+            <img
+              src="./img/netflix.jpg"
+              alt="Screenshot of Netflix"
+              loading="lazy"
+            />
             <div class="project-info">
               <h3>Netflix Homepage</h3>
               <p>A clone of the Netflix homepage</p>
@@ -175,7 +248,7 @@
           </article>
 
           <article class="project-card" role="listitem" tabindex="0">
-            <img src="./img/snek.png" alt="Snake Game" />
+            <img src="./img/snek.png" alt="Snake Game" loading="lazy" />
             <div class="project-info">
               <h3>Snake Game</h3>
               <p>A Retro Sname Game</p>
@@ -194,7 +267,11 @@
           </article>
 
           <article class="project-card" role="listitem" tabindex="0">
-            <img src="./img/Hotel.png" alt="Guest House website" />
+            <img
+              src="./img/Hotel.png"
+              alt="Guest House website"
+              loading="lazy"
+            />
             <div class="project-info">
               <h3>Kilimanjaro Guest House Website</h3>
               <p>A hotel website for my dad's business.</p>
@@ -213,7 +290,11 @@
           </article>
 
           <article class="project-card" role="listitem" tabindex="0">
-            <img src="./img/Tinder.png" alt="Screenshot of a Cat App" />
+            <img
+              src="./img/Tinder.png"
+              alt="Screenshot of a Cat App"
+              loading="lazy"
+            />
             <div class="project-info">
               <h3>A Cat Like/Review App</h3>
               <p>An app where users can like/review cat image</p>
@@ -233,7 +314,11 @@
         </div>
       </section>
 
-      <section id="skills" class="skills" aria-labelledby="skills-title">
+      <section
+        id="skills"
+        class="skills skills-section reveal"
+        aria-labelledby="skills-title"
+      >
         <h2 id="skills-title">Skills</h2>
         <div class="skills-grid" role="list">
           <div class="skill-category" role="listitem" tabindex="0">
@@ -264,14 +349,35 @@
         </div>
       </section>
 
-      <section id="contact" class="contact" aria-labelledby="contact-title">
+      <section
+        id="contact"
+        class="contact contact-section reveal"
+        aria-labelledby="contact-title"
+      >
         <h2 id="contact-title">Contact Me</h2>
         <form
           id="contact-form"
           class="contact-form"
           role="form"
           aria-label="Contact form"
+          action="https://formsubmit.co/lemaerick6@gmail.com"
+          method="POST"
         >
+          <input
+            type="hidden"
+            name="_subject"
+            value="New Portfolio Contact Form Submission"
+          />
+          <input type="hidden" name="_next" value="./thank-you.html" />
+          <input type="hidden" name="_template" value="table" />
+          <input
+            type="hidden"
+            name="_autoresponse"
+            value="Thank you for your message! I'll get back to you soon."
+          />
+          <input type="hidden" name="_captcha" value="true" />
+          <input type="hidden" name="_format" value="plain" />
+          <input type="hidden" name="_cc" value="lemaerick6@gmail.com" />
           <div class="form-group">
             <label for="name">Name</label>
             <input
@@ -381,6 +487,10 @@
       <p>&copy; 2024 Erick Meikoki. All rights reserved.</p>
     </footer>
 
+    <button id="back-to-top" class="back-to-top" aria-label="Back to top">
+      <i class="fas fa-arrow-up" aria-hidden="true"></i>
+    </button>
+
     <script src="js/loading.js" type="module"></script>
     <script src="js/particles.js" type="module"></script>
     <script src="js/main.js" type="module"></script>
@@ -390,5 +500,7 @@
     <script src="js/accessibility.js" type="module"></script>
     <script src="js/tooltips.js" type="module"></script>
     <script src="js/feedback.js" type="module"></script>
+    <script src="js/back-to-top.js" type="module"></script>
+    <script src="js/scroll-reveal.js"></script>
   </body>
 </html>
