@@ -70,6 +70,14 @@ An app where users can like and review cat images.
 - **Tech Stack**: React, RestAPIs, Firebase
 - **Demo**: [View Live](https://cats-app-e0ef1.web.app/)
 
+### 7. MovieTinder
+
+A Tinder-like interface for discovering movies. Swipe right on movies you're interested in, swipe left to skip. Features movie details, trailers, cast, ratings, and similar recommendations.
+
+- **Tech Stack**: React, TypeScript, Vite, TMDB API
+- **Demo**: [View Live](https://movie-tinder-55c6cgezo-ericks-projects-374ac0ff.vercel.app/)
+- **GitHub**: [erickmeikoki/MovieTinder](https://github.com/erickmeikoki/MovieTinder?tab=readme-ov-file)
+
 ## 🚀 Getting Started
 
 1. Clone the repository:
